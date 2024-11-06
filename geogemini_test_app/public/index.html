@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Distance Guessing Game</h1>
+    <p>Click on the map to guess the location of the hidden point. Press "Final Answer" to see the distance and hint image.</p>
+    <button id="resetButton">Reset</button>
+    <button id="finalAnswerButton">Final Answer</button>
+    <div id="map"></div>
+    <div id="result">
+        <p id="distance">Distance: --</p>
+        <img id="hint" alt="Hint Image" src="" />
+    </div>
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_PUBLIC_MAPS_API_KEY&callback=initMap"></script>
+</body>
+</html>
